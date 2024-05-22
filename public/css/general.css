@@ -113,5 +113,9 @@ footer{
     .menu{
         width: 50vw;
     }
+    .scrollingText{
+        margin-top:300px;
+        text-align: center;
+    }
   }
   
