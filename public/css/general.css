@@ -117,5 +117,8 @@ footer{
         margin-top:300px;
         text-align: center;
     }
+    .download p{
+        display: none;
+    }
   }
   
