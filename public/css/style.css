@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/*Header*/
+header{
+
+    padding: 1.2em;
+    width: 100vw;
+}
+
+.menu{
+    width: 25vw;
+    list-style: none;
+}
+
+/*3D*/
+.bigText{
+    position: absolute;
+    flex: none;
+
+    width: 100vw;
+    height: 100vh;
+
+    font-size: 100%;
+    text-align: center;
+    font-weight: 900;
+
+    top: 10vh;
+}
+
+.bigText h1{
+
+    font-size: 200px;
+}
+
+.bigText h1 span{
+
+    font-size: 128px;
+}
+
+
+
+
+/*mian div*/
+.main-div{
+    width: 75vw;
+    height: auto;
+    box-shadow: 0px -8px 2.5em #888888 ;
+
+    margin-top: 10vh;
+    padding: 4em;
+    border-radius: 15px;
+}
+
+/*Santuario digitale*/
+.santuario h2{
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+.santuario img{
+    width: 38vw;
+    height: auto;
+}
+
+.santuario p{
+    font-size: 1em;
+}
+
+/*Info 1*/
+.info1{
+    width: 75%;
+}
+
+/*Scrolling banner*/
+.scrollingText{
+
+}
+
+.scrollingText h1{
+    font-size: 35vh;
+
+      /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.scrollingBanner{
+    position: relative;
+    background-color: white;
+    font-size: 36px;
+    padding: 0.5em;
+    width: 100%;
+    z-index: 2;
+
+    top: -240px;    
+}
+
+/*Meet the team*/
+.profile{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(114, 119, 124);
+    border-radius: 100%;
+    
+}
+
+.profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.description{
+    width: 13vw;
+    box-shadow: 0px -8px 1em #dbdbdb ;
+    
+
+    padding: 1em;
+    border-radius: 15px;
+
+}
+
+.description h3{
+    margin-bottom: 1em;
+}
+
+/*Reviews*/
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 12vw);
+    grid-template-rows: repeat(5, 15vh);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    
+    }
+    
+    .div1 { grid-area: 1 / 1 / 3 / 4; }
+    .div2 { grid-area: 3 / 1 / 6 / 4; }
+    .div3 { grid-area: 1 / 4 / 4 / 6; }
+    .div4 { grid-area: 4 / 4 / 6 / 6; }
+
+.parent .div1, .div2, .div3, .div4{
+    padding: 1.2em;
+    box-shadow: 0px -8px 1em #dbdbdb ;
+    border-radius: 15px;
+}
+
+.parent .profile{
+    width: 55px;
+    height: 55px;
+}
+
+.parent .account{
+    width: 20em;
+    margin-bottom: 2em;
+}
+
